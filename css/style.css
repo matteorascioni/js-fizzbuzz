@@ -1,9 +1,11 @@
-.valore3-5 {
+.Fizz {
     color: red;
-  }
-  .valore-3 {
+}
+
+.Buzz {
     color: blue;
-  }
-  .valore-5 {
+}
+
+.FizzBuzz {
     color: purple;
   }

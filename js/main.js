@@ -1,27 +1,25 @@
-var numbers = [];
-var numbers = document.getElementById("number");
-var items = '';
+var ul = document.getElementById('numlist');
 
-for (var i = 1; i <= 100; i++, valore = "") {
+for (var i = 0; i <= 100; i++, value = '') {
 
-    item = numbers[i];
+    if (i % 3 == 0)
+    value = "Fizz";
 
-    // FIZZBUZZ
-   if (i % 5 == 0 && i % 3 == 0)
-    valore = "valore3-5";
-    
-    // FIZZ
-    else if (i % 3 == 0)
-    valore = "valore-3";
+    else if (i % 5 == 0)
+    value = "Buzz"
 
-    // BUZZ
-    else (i % 5 == 0)
-    valore = "valore-5";
+    else ( )
 
-    items += '<li>' + item + '<li>';
 
-    // OUTPUT
-    document.getElementById('number').innerHTML = '<li>' + items + '<li>';
+
+
+
+
+
+   var li = document.createElement("li");
+   li.appendChild(document.createTextNode(i + " = " + value));
+   li.setAttribute("class", value);
+   ul.appendChild(li);
 }
 
 
