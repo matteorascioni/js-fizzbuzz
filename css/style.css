@@ -1,11 +1,11 @@
 .Fizz {
-    color: red;
-}
-
-.Buzz {
     color: blue;
 }
 
-.FizzBuzz {
-    color: purple;
+.Buzz {
+    color: gray;
+}
+
+.Fizzbuzz {
+    color: brown;
   }
