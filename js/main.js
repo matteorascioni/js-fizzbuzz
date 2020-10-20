@@ -1,4 +1,4 @@
-var ul = document.getElementById('numlist');
+var num = document.getElementById('numlist');
 
 for (var i = 0; i <= 100; i++, value = '') {
 
@@ -14,7 +14,7 @@ for (var i = 0; i <= 100; i++, value = '') {
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(i + " = " + value));
     li.setAttribute("class", value);
-    ul.appendChild(li);
+    num.appendChild(li);
 }
 
 
