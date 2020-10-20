@@ -1,10 +1,10 @@
-
+var numbers = [];
 var numbers = document.getElementById("number");
 var items = '';
 
 for (var i = 1; i <= 100; i++, valore = "") {
 
-    item = numbers[i]
+    item = numbers[i];
 
     // FIZZBUZZ
    if (i % 5 == 0 && i % 3 == 0)
@@ -18,8 +18,10 @@ for (var i = 1; i <= 100; i++, valore = "") {
     else (i % 5 == 0)
     valore = "valore-5";
 
+    items += '<li>' + item + '<li>';
+
+    // OUTPUT
+    document.getElementById('number').innerHTML = '<li>' + items + '<li>';
 }
 
-  // OUTPUT
-  items += '<li>' + items + '<li>';
-  document.getElementById('number').innerHTML = '<li>' + items + '<li>';
+
